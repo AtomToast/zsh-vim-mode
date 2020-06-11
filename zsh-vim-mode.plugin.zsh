@@ -557,7 +557,7 @@ vim-mode-cursor-finish-hook() {
     vim-mode-set-cursor-style DEFAULT
 }
 
-if [[ $TERM = (dumb|linux|eterm-color) ]] || (( $+KONSOLE_PROFILE_NAME )); then
+if [[ $TERM = (dumb|linux|eterm-color|fbpad-256) ]] || (( $+KONSOLE_PROFILE_NAME )); then
     :
 else
     vim_mode_keymap_funcs+=vim-mode-set-cursor-style
